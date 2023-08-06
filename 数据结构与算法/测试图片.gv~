@@ -1,0 +1,12 @@
+strict digraph "测试图片" {
+	graph [size=10]
+	subgraph cluster_a{
+	    c
+	    {rank=c:1}
+	}
+	a [color=red]
+	b [color=blue]
+	a -> b [color=green]
+	b -> a
+	{rank=same a:2,b:2}
+}
